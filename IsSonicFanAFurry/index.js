@@ -52,7 +52,7 @@ async function runSequence() {
     await showAlerts(messages);
 
     // Redirect
-    window.location.href = "/index.html";
+    window.location.href = "/My-website/index.html";
 }
 
 // Observe live changes to the <h1> text
@@ -73,4 +73,5 @@ observer.observe(Notxt, { childList: true, characterData: true, subtree: true })
 // Optional click to toggle text for testing
 Notxt.addEventListener("click", () => {
     Notxt.textContent = Notxt.textContent.toLowerCase() === "no" ? "Yes!" : "No.";
+
 });
