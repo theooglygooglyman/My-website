@@ -52,7 +52,7 @@ async function runSequence() {
     await showAlerts(messages);
 
     // Redirect
-    window.location.href = "/My-website/index.html";
+    window.location.href = "https://theooglygooglyman.github.io/My-website/";
 }
 
 // Observe live changes to the <h1> text
@@ -75,3 +75,4 @@ Notxt.addEventListener("click", () => {
     Notxt.textContent = Notxt.textContent.toLowerCase() === "no" ? "Yes!" : "No.";
 
 });
+
