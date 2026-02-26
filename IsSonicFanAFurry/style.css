@@ -1,0 +1,68 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+body.dark {
+    background-color: black;
+}
+
+/* Tremble animation (super fast) */
+@keyframes tremble {
+  0%   { transform: translate(0,0); }
+  10%  { transform: translate(-2px,1px); }
+  20%  { transform: translate(2px,-1px); }
+  30%  { transform: translate(-2px,1px); }
+  40%  { transform: translate(2px,-1px); }
+  50%  { transform: translate(-1px,0); }
+  60%  { transform: translate(1px,-1px); }
+  70%  { transform: translate(-1px,1px); }
+  80%  { transform: translate(1px,-1px); }
+  90%  { transform: translate(-1px,1px); }
+  100% { transform: translate(0,0); }
+}
+
+/* Tremble + smooth color change */
+.tremble {
+  animation: tremble 0.01s linear infinite;
+  color: red !important; 
+  transition: color 1s ease; /* smooth transition black -> red */
+}
+
+/* Slow float for wrapper */
+@keyframes slowFloat {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}
+
+.float-wrapper {
+  display: inline-block;
+  animation: slowFloat 2s ease-in-out infinite;
+}
+
+/* H1: start black, transparent bg */
+#No {
+  font-size: 250px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: black;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Paragraph stays static */
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  text-align: center;
+}

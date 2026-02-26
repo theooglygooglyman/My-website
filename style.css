@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+#Welcome{
+    text-align: center;
+}
+
+#Ladies-and-gentlemen-theres-a-paragraph{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color:rgb(36, 36, 36);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(20, 20, 20)
+}
+
+.navbar li{
+    float: left;
+}

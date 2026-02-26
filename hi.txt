@@ -1,0 +1,11 @@
+<h2 id="Fun-fact">Fun fact:<h4 id="Actual-fun-fact">Alex Terieur was actually my first website. It will turn 1 year old during late spring/early summer</h4></h3>
+
+<li><a href="https://sonicfan22.github.io/AlexTerieur.org-source-code/">AlexTerieur</a></li>
+
+#Fun-fact{
+    text-align: center;
+}
+
+#Actual-fun-fact{
+    text-align: center;
+}
