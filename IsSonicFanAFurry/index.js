@@ -47,6 +47,7 @@ async function runSequence() {
         "Because of that typo",
         "Just...",
         "Go away"
+        "Also why did you click on this website in the first place???"
     ];
 
     await showAlerts(messages);
